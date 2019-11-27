@@ -1,0 +1,11 @@
+#container{
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+    overflow: auto;
+}
+#grid{
+    display: inline-block;
+    border: 1px solid black; 
+}
