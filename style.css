@@ -1,11 +1,23 @@
+#house{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
 #container{
+    display: grid;
     width: 700px;
     height: 700px;
     border: 1px solid black;
-    display: flex;
-    overflow: auto;
+    background-color: black;
 }
-#grid{
-    display: inline-block;
+.hover{
+    background-color: black;
+}
+.grid{
+    text-align: center;
+    background-color: aliceblue; 
     border: 1px solid black; 
+}
+#header{
+    text-align: center;
 }
