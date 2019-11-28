@@ -1,6 +1,6 @@
 var container = document.getElementById("container");
 var grid = document.createElement("div"); 
-grid.setAttribute("id", "grid");
+grid.setAttribute("class", "grid");
 var row = 16; 
 var column = row; 
 var gridSize = 700 / row;
