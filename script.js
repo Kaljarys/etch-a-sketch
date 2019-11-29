@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 gridGeneration(16);
 
 
@@ -19,11 +16,18 @@ function gridGeneration(row){
 
 var grids = document.querySelectorAll(".grid");
 
+
 grids.forEach((grid) => {
     grid.addEventListener("mouseover", (e) => {
         e.target.style.background = 'black';
     })
 })
-    
 
->>>>>>> grid OK
+var clearGrid = document.querySelector("#clearGrid");
+grids.forEach((grid) => {
+    clearGrid.addEventListener("click", (e) => {
+        grid.style.background = "white";
+    })
+})
+ 
+
