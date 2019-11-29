@@ -16,12 +16,14 @@ function gridGeneration(row){
     }
 }
 
-document.getElementByClass("grid").addEventListener("mouseover", function(hover{
-    
-    hover.grid.className = "hover";
-});
 
+var grids = document.querySelectorAll(".grid");
 
+grids.forEach((grid) => {
+    grid.addEventListener("mouseover", (e) => {
+        e.target.style.background = 'black';
+    })
+})
     
 
 >>>>>>> grid OK

@@ -11,11 +11,11 @@
     background-color: black;
 }
 .hover{
-    background-color: black;
+    background: black;
 }
 .grid{
     text-align: center;
-    background-color: aliceblue; 
+    background:white; 
     border: 1px solid black; 
 }
 #header{
