@@ -12,11 +12,11 @@ function gridGeneration(row){
             grid.className = "grid";
             container.appendChild(grid); 
     }
-}  
+
     var grids = document.querySelectorAll(".grid");
         grids.forEach((grid) => {
             grid.addEventListener("mouseover", (e) => {
-            e.target.style.background = 'black';
+            e.target.style.background = "black";
     })
 })
     var clearGrid = document.querySelector("#clearGrid");
@@ -26,16 +26,16 @@ function gridGeneration(row){
     })
 })
 
-    let selectSize =  document.querySelector("#selectSize");
+    var selectSize =  document.querySelector("#selectSize");
 
     selectSize.addEventListener("click", () => {
-         var number = window.prompt("How many rows?");  
              grids.forEach((grid) => {
             document.getElementById("container").removeChild(grid);
         })
+    var number = window.prompt("How many rows?");
     gridGeneration(number);
 })
-
+}
 
 
 
