@@ -12,7 +12,7 @@ function gridGeneration(row){
             grid.className = "grid";
             container.appendChild(grid); 
     }
-    
+}  
     var grids = document.querySelectorAll(".grid");
         grids.forEach((grid) => {
             grid.addEventListener("mouseover", (e) => {
@@ -32,10 +32,10 @@ function gridGeneration(row){
          var number = window.prompt("How many rows?");  
              grids.forEach((grid) => {
             document.getElementById("container").removeChild(grid);
-     })
+        })
     gridGeneration(number);
 })
-}
+
 
 
 
