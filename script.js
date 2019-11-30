@@ -13,32 +13,36 @@ function gridGeneration(row){
             container.appendChild(grid); 
     }
     
+    var grids = document.querySelectorAll(".grid");
+        grids.forEach((grid) => {
+            grid.addEventListener("mouseover", (e) => {
+            e.target.style.background = 'black';
+    })
+})
+    var clearGrid = document.querySelector("#clearGrid");
+        grids.forEach((grid) => {
+            clearGrid.addEventListener("click", (e) => {
+            grid.style.background = "white";
+    })
+})
+
+    let selectSize =  document.querySelector("#selectSize");
+
+    selectSize.addEventListener("click", () => {
+         var number = window.prompt("How many rows?");  
+             grids.forEach((grid) => {
+            document.getElementById("container").removeChild(grid);
+     })
+    gridGeneration(number);
+})
 }
 
 
 
-var grids = document.querySelectorAll(".grid");
-grids.forEach((grid) => {
-    grid.addEventListener("mouseover", (e) => {
-        e.target.style.background = 'black';
-    })
-})
 
-var clearGrid = document.querySelector("#clearGrid");
-grids.forEach((grid) => {
-    clearGrid.addEventListener("click", (e) => {
-        grid.style.background = "white";
-    })
-})
 
-let selectSize =  document.querySelector("#selectSize");
-let number = () => +(window.prompt("How many rows?"));
-selectSize.addEventListener("click", () => {
-    number();
-     grids.forEach(function(grid){
-         grid.parentNode.removeChild(grid);
-     })   
-    gridGeneration(number);
-})
+
+
+
  
 
